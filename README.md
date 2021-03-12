@@ -1,4 +1,4 @@
-# Linguagem-de-Programa-o-I
+# Linguagem de Programação I
 Nome: Clarisse Letícia da Silva Santos
 
 RA: 1460481911009
