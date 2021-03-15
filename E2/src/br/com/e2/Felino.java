@@ -1,13 +1,14 @@
 package br.com.e2;
 
-public class Felino {//atributos
+public class Felino {
+	//atributos
 		private String especie;
 		private String genero;
 		private double comprimento;
 		private double altura;
 		private int peso;
-		//mÈtodos de acesso
-		public Felino(String especie, String genero, double comprimento, double altura, int peso){//mÈtodo construtor
+
+		public Felino(String especie, String genero, double comprimento, double altura, int peso){//m√©todo construtor
 						this.especie = especie;
 						this.genero = genero;
 						this.comprimento = comprimento;
@@ -15,7 +16,7 @@ public class Felino {//atributos
 						this.peso = peso;
 						}
 
-
+		//m√©todos de acesso
 		public String getEspecie() {
 			return especie;
 		}
@@ -55,17 +56,18 @@ public class Felino {//atributos
 		public void setPeso(int peso){
 			this.peso = peso;
 		}
-		//mÈtodos de classes
+		
+		//m√©todos de classes
 		public void correr(int passos){
 			System.out.println(passos + "km/h de velocidade");
 		}
 		
 		public void cacar(int passos){
-			System.out.println("Corre atÈ "+ passos + " km/h");
+			System.out.println("Corre at√© "+ passos + " km/h");
 		}
 
 		public void falar(String som){
-			System.out.println("A comunicaÁ„o desta especie È feita atravÈs de " + som);
+			System.out.println("A comunica√ß√£o desta especie √© feita atrav√©s de " + som);
 		}
 		
 		public boolean dormir(boolean obd){
@@ -85,7 +87,7 @@ public class Felino {//atributos
 			
 		}
 		public void vida(String expectativa){
-			System.out.println("A expectativa de vida È de atÈ"+ expectativa);
+			System.out.println("A expectativa de vida √© de at√©"+ expectativa);
 		}
 		public void abanarCauda(){
 			System.out.println("Abanar,abanar ...");
@@ -94,8 +96,8 @@ public class Felino {//atributos
 		public static void main(String[] args) {
 			// TODO Auto-generated method stub
 			
-			Felino f1=new Felino("Le„o","M",2.50,1.75,250);
-			System.out.println("Le„o");
+			Felino f1=new Felino("Le√£o","M",2.50,1.75,250);
+			System.out.println("Le√£o");
 			f1.falar("rugidos" + "\n" + "Roar! rawww!\n");			
 			
 			Felino f2= new Felino("Tigre","F",3.5,1,250);
@@ -103,8 +105,8 @@ public class Felino {//atributos
 			f2.dormir(true);
 			System.out.println("\n");
 			
-			Felino f3= new Felino("OnÁa-Pintada","F",1.7,64,125);
-			System.out.println("OnÁa-Pintada");
+			Felino f3= new Felino("On√ßa-Pintada","F",1.7,64,125);
+			System.out.println("On√ßa-Pintada");
 			f3.cacar(80);
 			System.out.println("\n");
 			
@@ -115,7 +117,7 @@ public class Felino {//atributos
 			
 			Felino f5=new Felino("Leopardo das Neves","M",1.50,75,32);
 			System.out.println("Leopardo das Neves");
-			f5.aspecto("Sua pelagem È espessa e de diferentes tons de cinza, com manchas pretas em rosetas e peito branco.\nAlÈm disso, h· gradaÁıes de cor amarelada ou marrom em algumas partes de seu corpo.");
+			f5.aspecto("Sua pelagem √© espessa e de diferentes tons de cinza, com manchas pretas em rosetas e peito branco.\nAl√©m disso, h√° grada√ß√µes de cor amarelada ou marrom em algumas partes de seu corpo.");
 			
 			
 		}
